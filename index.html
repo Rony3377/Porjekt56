@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>animation übungen</title>
+  </head>
+  <style>
+    main {
+      background-image: url(https://wallup.net/wp-content/uploads/2016/01/168595-space-stars.jpg);
+      width: 100vw;
+      height: 100vh;
+      background-size: 150% 100%;
+      animation-name: hintergrund;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+    }
+    /*****main img keyfram*****/
+    @keyframes hintergrund {
+      0% {
+        background-position: 0px 100%;
+      }
+
+      100% {
+        background-position: 100px 100%;
+      }
+    }
+
+    .box1 {
+    }
+    .box1 img {
+      width: 50px;
+      height: 50px;
+      margin-top: 200px;
+      animation-name: bild;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+    }
+    /*****main img keyfram*****/
+    @keyframes bild {
+      0% {
+        transform: scale(0.75);
+        margin-top: 50vh;
+        rotate: 50deg;
+        margin-left: 0px;
+      }
+      50% {
+        transform: scale(1);
+        margin-top: 51vh;
+        rotate: 55deg;
+        margin-left: 10px;
+      }
+      100% {
+        transform: scale(1.25);
+        margin-top: 52vh;
+        rotate: 60deg;
+        margin-left: 0px;
+      }
+    }
+  </style>
+  <body>
+    <main>
+      <div class="box1">
+        <img src="r.png" alt="" />
+      </div>
+    </main>
+  </body>
+</html>
